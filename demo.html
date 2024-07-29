@@ -4,20 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cactus Bailarín</title>
+    <title>Grabar y Reproducir Audio</title>
 </head>
 
 <body>
-
-    <h1>Cactus Bailarín</h1>
-    <img src="cactus.png" alt="">
-    <video src="cactus-bailarin.mp4" controls>
-    </video>
-
+    <h1>Grabar y Reproducir Audio</h1>
     <button id="startButton">Iniciar Grabación</button>
     <button id="stopButton" disabled>Detener Grabación</button>
     <audio id="audioPlayback" controls></audio>
-    
+
     <script>
         let mediaRecorder;
         let audioChunks = [];
@@ -51,7 +46,6 @@
             document.getElementById('stopButton').disabled = true;
         });
     </script>
-
 </body>
 
 </html>
